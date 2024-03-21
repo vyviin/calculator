@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #FFFADE;
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #464555;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%; /*display width = calculator width */
+    padding:20px; /*makes display bigger*/
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: #DDDBF1;
+}
+#keys {
+    display: grid; /* displays the keys in 1 column */
+    /* 4 columns; fr- fractional unit: 1fr means they should take up the same amt space */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; /* gap btw the rows */
+    padding: 25px; /*padding around the keys*/
+}
+
+button { /* selects all buttons */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: #AAA8CC;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover { /* button gets lighter when mouse hovers over */
+    background-color: lavender;
+}
+button:active { /* button flashes when clicked */
+    background-color: white;
+}
+
+.op-btn {
+    background-color: #FFFADE;
+}
+.op-btn:hover {
+    background-color: #ffffff;
+}
+.op-btn:active {
+    background-color: rgb(207, 207, 207);
+}
+
